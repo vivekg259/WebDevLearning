@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form2</title>
+    <style>
+      body {
+        background-color: rgb(158, 219, 158);
+      }
+      #fds {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+    <fieldset id="fds">
+      <legend style="font-size: larger"><b>Personal Information</b></legend>
+      <table>
+        <tr>
+          <td>Name:</td>
+          <td><input type="text" placeholder="Enter your name" /></td>
+        </tr>
+        <tr>
+          <td>Password:</td>
+          <td><input type="password" placeholder="Enter your password" /></td>
+        </tr>
+        <tr>
+            <td>Phone Number:</td>
+            <td><input type="number"placeholder="Enter your phone number"></td>
+        </tr>
+        <tr>
+            <td>Favorite Decade:</td>
+            <td><input type="number" placeholder="YYYY" min="1947" max="2023"></td>
+        </tr>
+        <tr>
+            <td>Favorite Coffee:</td>
+            <td>
+                <select>
+                    <option value="Regular Coffee">Regular Coffee</option>
+                    <option value="Iced Coffee">Iced Coffee</option>
+                    <option value="Late">Latte</option>
+                    <option value="Espresso Drinks">Espresso Drinks</option>
+                </select>
+            </td>
+        </tr>
+      </table>
+    </fieldset>
+    <br>
+    <fieldset id="fds">
+        <legend>What is your favorite food ?</legend>
+        <input type="radio"> Tacon <br>
+        <input type="radio"> Pizza <br>
+        <input type="radio"> Other <br>
+    </fieldset>
+    <br>
+    <fieldset id="fds">
+        <legend>Do You have Pets ?</legend>
+        <input type="checkbox"> Dog<br>
+        <input type="checkbox"> Cat<br>
+        <input type="checkbox"> Fish<br>
+        <input type="checkbox"> Other<br>
+    </fieldset>
+    <br>
+    <fieldset id="fds">
+        <legend><b>Send Me a Note</b></legend>
+        Your Message:
+        <br>
+        <textarea cols="37" rows="5" placeholder="Enter here.."></textarea>
+    </fieldset>
+    <br>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>

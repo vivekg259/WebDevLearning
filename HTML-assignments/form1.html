@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form1</title>
+    <style>
+      body {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      #f1 {
+        border: 1px solid black;
+        background-color: blanchedalmond;
+        padding: 10px;
+      }
+      #p1 {
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="f1">
+      <h1><u>Farewell Party Survey Form</u></h1>
+      <p id="p1">
+        Name <input type="text" placeholder="Enter your name" /><br /><br />
+        Email <input type="email" placeholder="Enter Your Email" /><br /><br />
+        Age <input type="number" placeholder="Enter Your Age" /><br /><br />
+        Which option best describe you?
+        <select>
+          <option value="Student">Student</option>
+          <option value="Graduate">Graduate</option>
+          <option value="Employed">Employed</option>
+          </select><br /><br />
+        Will you attend the party? <input type="radio" /> Yes
+        <input type="radio" /> No <br /><br />
+        What did you like about the program?<br />
+         <input type="checkbox" /> Training<br />
+         <input type="checkbox" /> The Learning Sessions from industry Expert<br />
+         <input type="checkbox" /> Community Meetups<br />
+         <input type="checkbox" /> Brown bag Sessions<br />
+         <input type="checkbox" /> Switching To Hybrid Mode<br />
+         <input type="checkbox" /> Food, Office etc.<br /><br />
+        Any comments or Suggestions <br />
+        <textarea cols="42" rows="5" placeholder="Enter here.."></textarea><br /><br />
+         <button type="reset">Reset</button>
+         <button type="submit">Submit</button>
+      </p>
+    </form>
+  </body>
+</html>
