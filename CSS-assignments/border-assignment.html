@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 30px;
+            text-align: center;
+        }
+      .solid {
+        border: 5px solid black;
+      }
+      .dashed {
+        border: 5px dashed rgb(227, 136, 8);
+      }
+      .dotted {
+        border: 5px dotted rgb(217, 224, 11);
+      }
+      .double {
+        border: 5px double rgb(32, 195, 14);
+      }
+      .groove {
+        border: 5px groove rgb(8, 231, 167);
+      }
+      .hidden {
+        border: 5px hidden rgb(5, 5, 5);
+      }
+      .inset {
+        border: 5px inset rgb(6, 41, 242);
+      }
+      .outset {
+        border: 5px outset rgb(212, 12, 172);
+      }
+      .unset {
+        border: 5px unset rgb(3, 3, 3);
+      }
+      .ridge {
+        border: 5px ridge rgb(221, 12, 19);
+      }
+      p {
+        padding: 20px;
+        margin: 10px;
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        text-align: center;
+        background-color: rgba(188, 186, 182, 0.374);
+
+      }
+    </style>
+  </head>
+  <body>
+    <p class="solid">This is <b>solid</b> border</p>
+    <p class="dashed">This is <b>dashed</b> border</p>
+    <p class="dotted">This is <b>dotted</b> border</p>
+    <p class="double">This is <b>double</b> border</p>
+    <p class="groove">This is <b>groove</b> border</p><br>
+    <p class="hidden">This is <b>hidden/none</b> border</p>
+    <p class="inset">This is <b>inset</b> border</p>
+    <p class="outset">This is <b>outset</b> border</p>
+    <p class="unset">This is <b>unset</b> border</p>
+    <p class="ridge">This is <b>ridge</b> border</p>
+  </body>
+</html>

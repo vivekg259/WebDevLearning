@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box-models</title>
+    <style>
+    
+    /* Existing styles for larger screens */
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .main-div {
+        border: 5px unset black;
+        margin: 70px;
+        width: 90%;
+        height: 70%;
+        background-color: rgb(200, 144, 251);
+    }
+
+    .div1 {
+        background-color: rgb(22, 216, 83);
+        border: none;
+        width: 360px;
+        height: 100px;
+        margin: auto;
+        box-shadow: -5px 8px;
+    }
+
+    h1, h2 {
+        text-align: center;
+        padding-top: 30px;
+        margin: auto;
+    }
+
+    h2 {
+        padding: 20px;
+    }
+
+    .div2 {
+        height: 50px;
+        border-left: 2px solid rgb(0, 0, 0);
+        margin-left: 50%;
+    }
+
+    hr {
+        width: 60%;
+        border: 1px solid black;
+        margin-top: -1.5px;
+        margin-bottom: -1px;
+    }
+
+    .div3 {
+        border-left: 2px solid black;
+        height: 100px;
+        display: inline-flex;
+        margin-left: 19.95%;
+        margin-top: -10px;
+    }
+
+    .div4 {
+        border-left: 2px solid black;
+        height: 100px;
+        display: inline-flex;
+        margin-left: 29.69%;
+    }
+
+    .div5 {
+        border-left: 2px solid black;
+        height: 100px;
+        display: inline-flex;
+        margin-left: 29.55%;
+    }
+
+    .div6 {
+        background-color: rgb(238, 140, 41);
+        border: none;
+        width: 160px;
+        height: 100px;
+        margin-left: 14%;
+        box-shadow: -4px 7px;
+        margin-top: -24px;
+        display: inline-flex;
+    }
+
+    .div7 {
+        background-color: rgb(41, 120, 238);
+        border: none;
+        width: 160px;
+        height: 100px;
+        margin-left: 18.3%;
+        box-shadow: -4px 7px;
+        margin-top: -24px;
+        display: inline-flex;
+    }
+
+    .div8 {
+        background-color: rgb(215, 238, 41);
+        border: none;
+        width: 160px;
+        height: 100px;
+        margin-left: 18%;
+        box-shadow: -4px 7px;
+        margin-top: -24px;
+        display: inline-flex;
+    }
+
+    .div9 {
+        background-color: rgb(247, 197, 121);
+        border: none;
+        width: 160px;
+        height: 60px;
+        margin-left: 14%;
+        box-shadow: -2px 4px;
+        margin-top: -70px;
+        display: inline-flex;
+    }
+
+    .div10 {
+        background-color: rgb(127, 184, 246);
+        border: none;
+        width: 160px;
+        height: 60px;
+        margin-left: 18.3%;
+        box-shadow: -2px 4px;
+        margin-top: -70px;
+        display: inline-flex;
+    }
+
+    .div11 {
+        background-color: rgb(228, 241, 118);
+        border: none;
+        width: 260px;
+        height: 60px;
+        margin-left: 11%;
+        box-shadow: -2px 4px;
+        margin-top: -70px;
+        display: inline-flex;
+    }
+
+    /* Responsive styles for mobile view */
+    @media only screen and (max-width: 600px) {
+        .main-div {
+            margin: 20px; /* Reduce margin for smaller screens */
+        }
+
+        .div1 {
+            width: 100%; /* Make it full width */
+            height: auto; /* Adjust height based on content */
+        }
+
+        h1 {
+            font-size: 24px; /* Reduce font size for smaller screens */
+        }
+
+        h2 {
+            font-size: 18px; /* Reduce font size for smaller screens */
+            padding: 10px; /* Adjust padding for smaller screens */
+        }
+
+        .div2, .div3, .div4, .div5 {
+            display: none; /* Hide these divs on mobile screens */
+        }
+
+        hr {
+            width: 100%; /* Make the horizontal rule full width */
+            margin: 10px auto; /* Adjust margin for smaller screens */
+        }
+
+        .div6, .div7, .div8, .div9, .div10, .div11 {
+            width: 100%; /* Make these divs full width */
+            margin-left: 0; /* Remove left margin for smaller screens */
+        }
+    }
+</style>
+
+  </head>
+  <body>
+    <div class="main-div">
+        <div class="div1">
+            <h1>Frontend Developer</h1>
+          
+        </div>
+        <div class="div2">
+
+        </div>
+        <hr>
+        <div class="div3"></div>
+        <div class="div4"></div>
+        <div class="div5"></div>
+        <div class="div6">
+            <h2>HTML</h2>
+        </div>
+        <div class="div7">
+            <h2>CSS</h2>
+        </div>
+        <div class="div8">
+            <h2>JavaScript</h2>
+        </div>
+        <div class="div3"></div>
+        <div class="div4"></div>
+        <div class="div5"></div>
+        <hr>
+        <div class="div9">
+            <h2>Structure</h2>
+        </div>
+        <div class="div10">
+            <h2>Design</h2>
+        </div>
+        <div class="div11">
+            <h2>Dynamic Activity</h2>
+        </div>
+    </div>
+  </body>
+</html>
