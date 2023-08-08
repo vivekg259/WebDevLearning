@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .main {
+            background: #5ad0ff;
+            padding: 20px;
+            display: flex;
+            justify-content: right;
+            flex-wrap: wrap;
+        }
+        .items {
+            color: white;
+            padding: 10px 20px;
+            font-size: 30px;
+        }
+        @media only screen and (max-width: 800px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="items">Home</div>
+        <div class="items">About</div>
+        <div class="items">Products</div>
+        <div class="items">Contact</div>
+    </div>
+</body>
+</html>

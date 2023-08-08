@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .main {
+            display: flex;
+            justify-content: right;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .items {
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 20px ;
+            text-align: center;
+        }
+        .main2 {
+            display: flex;
+            flex-direction: row;
+        }
+        .header {
+            background-color: #fe8c6d;
+        }
+        .para {
+            background-color: #66e5ff;
+        }
+        .aside1 {
+            background-color: #f5ff6b;
+            flex-grow: 0.5;
+        }
+        .aside2 {
+            background-color: #ff79e0;
+            flex-grow: 0.5;
+        }
+        .footer {
+            background-color: #73ffa2;
+        }
+        @media only screen and (max-width: 800px) {
+  .main2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="items header"><h1>Header</h1></div>
+        <div class="items para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate laudantium animi, tempore deleniti aut rerum quae quasi eaque ex ipsa amet id magnam totam. Iste eum cumque esse repudiandae soluta aspernatur! Expedita rem ullam commodi molestiae consequuntur quidem excepturi vitae laboriosam voluptas, velit numquam nulla alias animi in atque voluptatibus</div>
+        <div class="main2">
+            <div class="items aside1">Aside1</div>
+            <div class="items aside2">Aside2</div>
+        </div>
+        <div class="items footer"><h2>Footer</h2></div>
+    </div>
+</body>
+</html>
