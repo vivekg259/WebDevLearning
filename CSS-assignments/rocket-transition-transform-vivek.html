@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rocket</title>
+    <style>
+      body {
+        background-color: #0c0a0f;
+      }
+      .main {
+        position: relative;
+        width: 98vw;
+        height: 80vh;
+        margin: 0 auto;
+        background: url(./images/space.gif);
+      }
+      div.rocket {
+        position: absolute;
+        left: 20px;
+        background-color: rgba(255, 0, 0, 0);
+        bottom: 0px;
+        transition: 2s 1.5s;
+      }
+      div.rocket div {
+        height: 150px;
+        width: 150px;
+        background-image: url(./images/rocket.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 1s;
+      }
+      .text {
+        display: none;
+        color: white;
+        transition: 1s 2s;
+      }
+      h1 {
+        padding: 70px 40px;
+        font-size: 40px;
+      }
+      h1 span {
+        padding: 10px;
+        background-color: #ff6302;
+        border-radius: 50%;
+      }
+      .main:hover div.rocket {
+        transform: translate(1550px, -650px);
+      }
+      .main:hover div.rocket div {
+        transform: rotate(60deg);
+      }
+      .main:hover div.text {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="text">
+        <h1>This <span>Rocket</span> is Ready For Launch ...</h1>
+      </div>
+      <div class="rocket"><div></div></div>
+    </div>
+  </body>
+</html>
