@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+ ::selection {
+    color: white;
+    background: #FF6464;;
+ }
+
+.introduction, .blog-post, .featured-works {
+    padding: 0 16%;
+}
+
+/* header section --------------------------------------------------------------------------- */
+
+.navbar {
+    padding: 2% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    column-gap: 2.8%;
+    list-style-type: none;
+}
+.navbar a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
+.navbar li:nth-of-type(1) a {
+    color: #FF6464;
+}
+.navbar a:hover {
+    color: #FF6464;
+}
+/* about author - .introduction section -------------------------------------------------- */
+
+section.introduction {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 19.4%;
+    margin: 5% 0 0 0;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 8%;
+    width: 35em;
+    height: 36em;
+    padding: 3%;
+}
+.intro h1 {
+    color: #21243D;
+    font-size: 2.75em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 136%;
+}
+.intro p {
+    color:#2e3040;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+}
+.intro button {
+    width: 13em;
+    height: 3em;
+    border-radius: 2px;
+    background: #FF6464;
+    border: none;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.profile img {
+    width: 17em;
+    height: 17em;
+    margin: 5% 0 40% 0;
+    outline: 3px solid #FF6464;
+    border-radius: 50%;
+}
+
+/* Blog Posts section ----------------------------------------------------------------- */
+
+section.blog-post {
+    background: #EDF7FA;
+    padding-bottom: 1.8%;
+}
+.link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: 6.8em;
+}
+.recent {
+    color: #21243D;
+    font-size: 1.38rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+.all {
+    color: #00A8CC;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 7%;
+}
+.posts .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30em;
+    height: 22em;
+    padding: 3%;
+    margin-bottom: 4%;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 4px 10px 0px #bbe1fa40;
+}
+.card h2 {
+    color: #21243D;
+    font-size: 1.65rem;
+    font-weight: 700;
+}
+.card time {
+    color: #21243D;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: 5%;
+}
+.card p {
+    color: #21243D;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 4%;
+}
+
+/* Author work section ------------------------------------------------------------------- */
+
+section.featured-works {
+    margin-top: 0.5%;
+}
+.featured-works h4 {
+    color: #21243D;
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 5rem;
+    margin-bottom: 2%;
+}
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5%;
+}
+.work img {
+    width: 23em;
+    height: 15em;
+    border-radius: 6px;
+    margin: 0 5% 5% 0;
+
+}
+.work-content {
+    width: 37.5em;
+}
+.work-content h1 {
+    color:  #21243D;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.work-content time {
+    padding: 0.5% 2% 0.8% 2%;
+    border-radius: 16px;
+    background: #142850;
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: 900;
+    line-height: 6rem;
+}
+.work-content span {
+    color: #8695A4;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.work-content p {
+    color: #21243D;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 10%;
+}
+
+/* Footer ----------------------------------------------------------------------------------- */
+footer {
+    margin: 8% 0 5% 0;
+}
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2%;
+    cursor: pointer;
+}
+footer p {
+    color: #21243D;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 5em;
+}
+
+/* media query ------------------------------------------------------------------------------- */
+
+@media (min-width: 821px) and (max-width: 100000px) {
+    body {
+        width: 1519.5px;
+        margin: 0 auto;
+        
+    }
+}

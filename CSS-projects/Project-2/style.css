@@ -1,0 +1,459 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+
+/* First Page CSS--------------------------------------------------------------------------- */
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1.5rem 5rem;
+  justify-content: space-between;
+}
+
+div.navbar-items {
+  font-size: 0.9rem;
+  padding-top: 1rem;
+  font-weight: 500;
+  display: flex;
+  flex-wrap: wrap;
+  width: 28rem;
+  justify-content: space-between;
+}
+
+section.content-1 {
+  padding: 2rem;
+  display: flex;
+  margin: 1.5rem 5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.text-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 28rem;
+  height: 31.25em;
+  row-gap: 1rem;
+}
+
+.heading-1 {
+  color: #000;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 645;
+  line-height: 3.5rem;
+}
+
+.para-1 {
+  color: #7d7987;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+.button-1 button {
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 200px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 55px;
+  background: #458ff6;
+  color: white;
+}
+
+.image-1 {
+  background: url(./images/image1.png);
+  height: 31.25rem;
+  width: 37.5rem;
+  background-size: 600px 500px;
+}
+
+/* Second Page CSS ----------------------------------------------------------*/
+
+.second-page {
+  background: url(./images/Frame.png);
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+
+section.header-2 {
+    margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  row-gap: 2rem;
+}
+
+.heading-2 {
+  color: #000;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 650;
+  line-height: 3.5rem;
+}
+
+.header-2 hr {
+  width: 3.15rem;
+  border: 1px solid;
+  align-self: center;
+}
+.para-2 {
+  width: 55rem;
+  align-self: center;
+  color: #74717b;
+  text-align: center;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 349;
+  line-height: 1.8rem;
+}
+
+section.tools-div {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+    row-gap: 3.5rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 5rem;
+}
+
+.tools-div .items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 21.875rem;
+    height: 22.125rem;
+    padding: 3.2rem;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 10px 40px 50px 0px rgba(219, 227, 254, 0.4);
+}
+
+.search .icon{
+    background: url(./images/search.png); background-repeat: no-repeat;
+    width: 5.7rem;
+    height: 5.6rem;
+    flex-shrink: 0;
+}
+.search .heading {
+    color: #000;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 700;
+line-height: 3.5rem;
+}
+.search .para {
+    color: #7D7987;
+font-size: 1rem;
+font-style: normal;
+font-weight: 300;
+line-height: 1.75rem;
+}
+
+.pharmacy .icon{
+    background: url(./images/pharmacy.png); background-repeat: no-repeat;
+    width: 5.7rem;
+    height: 5.6rem;
+    flex-shrink: 0;
+}
+.pharmacy .heading {
+    color: #000;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 700;
+line-height: 3.5rem;
+}
+.pharmacy .para {
+    color: #7D7987;
+font-size: 1rem;
+font-style: normal;
+font-weight: 300;
+line-height: 1.75rem;
+}
+
+.consult .icon{
+    background: url(./images/consult.png); background-repeat: no-repeat;
+    width: 5.7rem;
+    height: 6rem;
+    flex-shrink: 0;
+}
+.consult .heading {
+    color: #000;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 700;
+line-height: 3.5rem;
+}
+.consult .para {
+    color: #7D7987;
+font-size: 1rem;
+font-style: normal;
+font-weight: 300;
+line-height: 1.75rem;
+}
+
+.detail .icon{
+    background: url(./images/details.png); background-repeat: no-repeat;
+    width: 5.7rem;
+    height: 6rem;
+    flex-shrink: 0;
+}
+.detail .heading {
+    color: #000;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 700;
+line-height: 3.5rem;
+}
+.detail .para {
+    color: #7D7987;
+font-size: 1rem;
+font-style: normal;
+font-weight: 300;
+line-height: 1.75rem;
+}
+
+.emergency .icon{
+    background: url(./images/emergency.png); background-repeat: no-repeat;
+    width: 5.7rem;
+    height: 5.6rem;
+    flex-shrink: 0;
+}
+.emergency .heading {
+    color: #000;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 700;
+line-height: 3.5rem;
+}
+.emergency .para {
+    color: #7D7987;
+font-size: 1rem;
+font-style: normal;
+font-weight: 300;
+line-height: 1.75rem;
+}
+
+.track .icon{
+    background: url(./images/tracking.png); background-repeat: no-repeat;
+    width: 5.7rem;
+    height: 6rem;
+    flex-shrink: 0;
+}
+.track .heading {
+    color: #000;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 700;
+line-height: 3.5rem;
+}
+.track .para {
+    color: #7D7987;
+font-size: 1rem;
+font-style: normal;
+font-weight: 300;
+line-height: 1.75rem;
+}
+
+.button-2 button {
+width: 200px;
+height: 56px;
+margin: 0 43%;
+flex-shrink: 0;
+border-radius: 55px;
+border: 1.8px solid #458FF6;
+color: #458FF6;
+background-color: white;
+font-size: 1.2rem;
+font-style: normal;
+font-weight: 700;
+line-height: 3.8px;
+}
+
+/* Third Page CSS------------------------------------------------------------------------ */
+
+section.content-page3 {
+  padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2.5rem;
+}
+.content-page3 .image-2 {
+  width: 40.5rem;
+height: 30rem;
+background: url(./images/image2.png);
+background-repeat: no-repeat;
+}
+.content-page3 .content-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1.2rem;
+  width: 30rem;
+  height: 30rem;
+}
+.content-3 .heading {
+  color: #000;
+font-size: 2.25rem;
+font-style: normal;
+font-weight: 700;
+line-height: 3.5rem;
+}
+.content-3 hr {
+  width: 3.15rem;
+  border: 1px solid;
+}
+.content-3 .para {
+  color: #7D7987;
+font-size: 1.2rem;
+font-style: normal;
+font-weight: 300;
+line-height: 1.9rem;
+}
+.content-3 .button-3 button {
+  width: 200px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 55px;
+  border: 1.8px solid #458FF6;
+  color: #458FF6;
+  background-color: white;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.8px;
+}
+
+/* Page #4 CSS ------------------------------------------------------------------------------------ */
+
+section.content-page4 {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 4.5rem;
+}
+.content-page4 .image-3 {
+width: 40.5rem;
+height: 35rem;
+background: url(./images/image3.png);
+background-repeat: no-repeat;
+}
+.content-page4 .content-4 {
+display: flex;
+flex-direction: column;
+justify-content: center;
+row-gap: 1.2rem;
+width: 30rem;
+height: 30rem;
+}
+.content-4 .heading {
+color: #000;
+font-size: 2.25rem;
+font-style: normal;
+font-weight: 700;
+line-height: 3.5rem;
+}
+.content-4 hr {
+width: 3.15rem;
+border: 1px solid;
+}
+.content-4 .para {
+color: #7D7987;
+font-size: 1.2rem;
+font-style: normal;
+font-weight: 300;
+line-height: 1.9rem;
+}
+.content-4 .button-4 button {
+width: 200px;
+height: 56px;
+flex-shrink: 0;
+border-radius: 55px;
+border: 1.8px solid #458FF6;
+color: #458FF6;
+background-color: white;
+font-size: 1.2rem;
+font-style: normal;
+font-weight: 700;
+line-height: 3.8px;
+}
+
+/* page #5 CSS---------------------------------------------------------------------------------------- */
+
+section.page5 .box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+padding: 3rem;
+width: 70rem;
+height: 27rem;
+border-radius: 24px;
+margin: 2rem auto;
+background: linear-gradient(223deg, #67C3F3 0%, #5A98F2 100%);
+}
+.box .heading {
+  text-align: center;
+color: #FFF;
+font-size: 2.2rem;
+font-style: normal;
+font-weight: 649;
+line-height: 3rem;
+}
+.box hr {
+  width: 3.15rem;
+border: 1px solid white;
+color: white;
+align-self: center;
+}
+.box .user-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 2.4rem;
+  column-gap: 5rem;
+}
+.user-info .photo {
+  width: 9rem;
+  height: 9rem;
+  background: url(./images/photo-user.png);
+  background-repeat: no-repeat;
+  margin-left: 2.2rem;
+}
+.user-info .name {
+  color: #FFF;
+font-size: 1.4rem;
+font-style: normal;
+font-weight: 700;
+line-height: 48px;
+margin-left: -2.5rem;
+margin-top: 2.5rem;
+}
+.name p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: -1.3rem;
+  color: #ffffffe6;
+}
+.user-info .para {
+  color: #ffffffe6;
+  width: 420px;
+  text-align: justify;
+font-size: 1.2rem;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+margin-left: 2.55rem;
+}
