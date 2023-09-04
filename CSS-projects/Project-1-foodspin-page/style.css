@@ -1,30 +1,25 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   box-sizing: border-box;
 }
+
 .main {
-  position: absolute;
-  width: 1280px;
-  height: 790px;
-  overflow: hidden;
-}
-section.circle-food .bg-circle {
-  position: absolute;
-  width: 1177px;
-  height: 1177px;
-  top: -645px;
-  left: 283px;
-  background: #ffeede;
-  border-radius: 50%;
-  z-index: -1;
+  position: relative;
+  padding-block: 50px;
+  padding-inline: 100px;
+  max-width: 1440px;
+  margin-inline: auto;
+  min-height: 100vh;
   overflow: hidden;
 }
 
+.header {
+  display: flex;
+}
+
 .logo {
-  position: absolute;
   width: 105px;
   height: 27px;
   top: 47px;
@@ -32,47 +27,236 @@ section.circle-food .bg-circle {
 }
 
 .menu {
-  position: absolute;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  width: 275px;
-  height: 21px;
-  top: 52px;
-  left: 375px;
+  align-items: center;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+  margin-left: 200px;
+  max-width: 275px;
   font-size: 15px;
   color: #333333;
   font-weight: 500;
 }
 
 .cart {
-  position: absolute;
+  margin-left: auto;
   width: 20px;
   height: 22px;
-  top: 51px;
-  right: 120px;
+}
+
+.middle-section {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+  margin-top: 250px;
 }
 
 .text {
+  flex-basis: 350px;
+}
+
+.image-subsection {
+  flex-basis: 650px;
+}
+
+.center-img-wrapper {
+  --offset: 270px;
+  position: relative;
+}
+
+.large-circle {
+  --large-circle-dia: 1200px;
   position: absolute;
+  width: var(--large-circle-dia);
+  aspect-ratio: 1;
+  background-color: #ffeede;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 50%;
+  border-radius: 50%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.center-img {
+  display: block;
+  margin-inline: auto;
+  width: 289px;
+  height: 289px;
+}
+
+.food-image {
+  position: absolute;
+  width: 100px;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  left: calc(50% + cos(var(--angle)) * var(--offset));
+  top: calc(100% - sin(var(--angle)) * var(--offset));
+}
+
+/* in degrees */
+.food-1 {
+  --angle: (15 + (1 - 1) * (180 - 2 * 15) / (5 - 1)) * 1deg;
+}
+
+.food-2 {
+  --angle: (15 + (2 - 1) * (180 - 2 * 15) / (5 - 1)) * 1deg;
+}
+
+.food-3 {
+  --angle: (15 + (3 - 1) * (180 - 2 * 15) / (5 - 1)) * 1deg;
+}
+
+.food-4 {
+  --angle: (15 + (4 - 1) * (180 - 2 * 15) / (5 - 1)) * 1deg;
+}
+
+.food-5 {
+  --angle: (15 + (5 - 1) * (180 - 2 * 15) / (5 - 1)) * 1deg;
+}
+
+.rod {
+  --rod-rotation: 0deg;
+  position: absolute;
+  width: 10px;
+  height: var(--offset);
+  background-color: red;
+  left: 50%;
+  top: calc(100% - var(--offset));
+  transform-origin: center bottom;
+  transform: translateX(-50%) rotate(var(--rod-rotation));
+  background: linear-gradient(red 0%, red 2px, transparent 2px, transparent 100%);
+  z-index: -1;
+}
+
+.rod-1 {
+  --rod-rotation: calc((90 - 15 - (1 - 1) * (180 - 2 * 15) / (27 - 1)) * 1deg);
+}
+
+.rod-2 {
+  --rod-rotation: calc((90 - 15 - (2 - 1) * (180 - 2 * 15) / (27 - 1)) * 1deg);
+}
+
+.rod-3 {
+  --rod-rotation: calc((90 - 15 - (3 - 1) * (180 - 2 * 15) / (27 - 1)) * 1deg);
+}
+
+.rod-4 {
+  --rod-rotation: calc((90 - 15 - (4 - 1) * (180 - 2 * 15) / (27 - 1)) * 1deg);
+}
+
+.rod-5 {
+  --rod-rotation: calc((90 - 15 - (5 - 1) * (180 - 2 * 15) / (27 - 1)) * 1deg);
+}
+
+.rod-6 {
+  --rod-rotation: calc((90 - 15 - (6 - 1) * (180 - 2 * 15) / (27 - 1)) * 1deg);
+}
+
+.rod-7 {
+  --rod-rotation: calc((90 - 15 - (7 - 1) * (180 - 2 * 15) / (27 - 1)) * 1deg);
+}
+
+.rod-8 {
+  --rod-rotation: calc((90 - 15 - (8 - 1) * (180 - 2 * 15) / (27 - 1)) * 1deg);
+}
+
+.rod-9 {
+  --rod-rotation: calc((90 - 15 - (9 - 1) * (180 - 2 * 15) / (27 - 1)) * 1deg);
+}
+
+.rod-10 {
+  --rod-rotation: calc((90 - 15 - (10 - 1) * (180 - 2 * 15) / (27 - 1)) * 1deg);
+}
+
+.rod-11 {
+  --rod-rotation: calc((90 - 15 - (11 - 1) * (180 - 2 * 15) / (27 - 1)) * 1deg);
+}
+
+.rod-12 {
+  --rod-rotation: calc((90 - 15 - (12 - 1) * (180 - 2 * 15) / (27 - 1)) * 1deg);
+}
+
+.rod-13 {
+  --rod-rotation: calc((90 - 15 - (13 - 1) * (180 - 2 * 15) / (27 - 1)) * 1deg);
+}
+
+.rod-14 {
+  --rod-rotation: calc((90 - 15 - (14 - 1) * (180 - 2 * 15) / (27 - 1)) * 1deg);
+}
+
+.rod-15 {
+  --rod-rotation: calc((90 - 15 - (15 - 1) * (180 - 2 * 15) / (27 - 1)) * 1deg);
+}
+
+.rod-16 {
+  --rod-rotation: calc((90 - 15 - (16 - 1) * (180 - 2 * 15) / (27 - 1)) * 1deg);
+}
+
+.rod-17 {
+  --rod-rotation: calc((90 - 15 - (17 - 1) * (180 - 2 * 15) / (27 - 1)) * 1deg);
+}
+
+.rod-18 {
+  --rod-rotation: calc((90 - 15 - (18 - 1) * (180 - 2 * 15) / (27 - 1)) * 1deg);
+}
+
+.rod-19 {
+  --rod-rotation: calc((90 - 15 - (19 - 1) * (180 - 2 * 15) / (27 - 1)) * 1deg);
+}
+
+.rod-20 {
+  --rod-rotation: calc((90 - 15 - (20 - 1) * (180 - 2 * 15) / (27 - 1)) * 1deg);
+}
+
+.rod-21 {
+  --rod-rotation: calc((90 - 15 - (21 - 1) * (180 - 2 * 15) / (27 - 1)) * 1deg);
+}
+
+.rod-22 {
+  --rod-rotation: calc((90 - 15 - (22 - 1) * (180 - 2 * 15) / (27 - 1)) * 1deg);
+}
+
+.rod-23 {
+  --rod-rotation: calc((90 - 15 - (23 - 1) * (180 - 2 * 15) / (27 - 1)) * 1deg);
+}
+
+.rod-24 {
+  --rod-rotation: calc((90 - 15 - (24 - 1) * (180 - 2 * 15) / (27 - 1)) * 1deg);
+}
+
+.rod-25 {
+  --rod-rotation: calc((90 - 15 - (25 - 1) * (180 - 2 * 15) / (27 - 1)) * 1deg);
+}
+
+.rod-26 {
+  --rod-rotation: calc((90 - 15 - (26 - 1) * (180 - 2 * 15) / (27 - 1)) * 1deg);
+}
+
+.rod-27 {
+  --rod-rotation: calc((90 - 15 - (27 - 1) * (180 - 2 * 15) / (27 - 1)) * 1deg);
+}
+
+.image {
+  max-width: 100%;
 }
 
 .price {
-  position: absolute;
   width: 81px;
   height: 66px;
   top: 286px;
   left: 100px;
-  color: #ff922c;
   font-size: 44px;
   font-weight: 650;
   line-height: 66px;
   letter-spacing: 0em;
   text-align: left;
+  color: #ff922c;
 }
 
 .heading {
-  position: absolute;
   width: 367px;
   height: 100px;
   top: 352px;
@@ -85,7 +269,6 @@ section.circle-food .bg-circle {
 }
 
 .para {
-  position: absolute;
   width: 320px;
   height: 60px;
   top: 464px;
@@ -97,14 +280,14 @@ section.circle-food .bg-circle {
   text-align: left;
 }
 
-.button button {
-  position: absolute;
-  width: 163px;
-  height: 48px;
-  top: 552px;
-  left: 100px;
+.order-now {
+  margin-top: 20px;
+}
+
+.order-now button {
+  padding: 15px 20px;
   border: none;
-  border-radius: 69px;
+  border-radius: 70px;
   background: #ff922c;
   color: white;
   font-size: 15px;
@@ -113,146 +296,19 @@ section.circle-food .bg-circle {
 }
 
 .video {
-  position: absolute;
-  width: 112px;
-  height: 20px;
-  top: 742px;
-  left: 100px;
+  margin-top: 100px;
   font-size: 13px;
   font-weight: 550;
   line-height: 20px;
   letter-spacing: 0em;
-  text-align: left;
 }
 
-.food-border {
+.arrow {
   position: absolute;
-  width: 560px;
-  height: 560px;
-  top: 880px;
-  left: 305px;
-  border: 2px dashed #e87f1e;
-  border-radius: 50%;
-}
-
-.center-img {
-  border-radius: 50%;
-  position: absolute;
-  width: 289px;
-  height: 295px;
-  top: 368px;
-  left: 727px;
-}
-
-.center-img img {
-  position: relative;
-  left: -103px;
-  top: -46px;
-  width: 489px;
-  height: 495px;
-}
-
-.arrow1 {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 617px;
-  left: 550px;
-}
-
-.arrow2 {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 617px;
-  left: 1110px;
-}
-.foods1 {
-  position: absolute;
-  width: 99px;
-  height: 99px;
-  top: 250px;
-  left: 647px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.foods1 img {
-  position: relative;
-  width: 120px;
-  height: 90px;
-  scale: 1.5;
-  left: -10px;
-}
-
-.foods2 {
-  position: absolute;
-  width: 99px;
-  height: 99px;
-  top: 190px;
-  left: 823px;
-  border-radius: 50%;
-}
-
-.foods2 img {
-  position: relative;
-  width: 90px;
-  height: 90px;
-  scale: 1.33;
-  left: 4px;
-  top: 9.5px;
-}
-
-.foods3 {
-  position: absolute;
-  width: 99px;
-  height: 99px;
-  top: 261px;
-  left: 999px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.foods3 img {
-  position: relative;
-  width: 115px;
-  height: 90px;
-  scale: 1.5;
-  left: -8.5px;
-  top: 3.2px;
-}
-
-.foods4 {
-  position: absolute;
-  width: 99px;
-  height: 99px;
-  top: 1054px;
-  left: 259px;
-  border-radius: 50%;
-  transform: rotate(-20deg);
-}
-
-.foods4 img {
-  position: relative;
-  width: 115px;
-  height: 90px;
-  scale: 1.5;
-  left: -8.5px;
-  top: 3.2px;
-}
-
-.foods5 {
-  position: absolute;
-  width: 99px;
-  height: 99px;
-  top: 1059px;
-  left: 810px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.foods5 img {
-  position: relative;
-  width: 120px;
-  height: 90px;
-  scale: 1.5;
-  left: -10px;
-}
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: calc(2 * cos(15deg) * var(--offset));
+}/*# sourceMappingURL=style.css.map */
